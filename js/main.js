@@ -149,6 +149,7 @@ createRestaurantHTML = (restaurant) => {
 
   const neighborhood = document.createElement('p');
   neighborhood.innerHTML = restaurant.neighborhood;
+  neighborhood.setAttribute('class', 'neighborhood');
   li.append(neighborhood);
 
   const address = document.createElement('p');
