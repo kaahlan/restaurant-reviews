@@ -8,7 +8,7 @@
 
 body,td,th,p{
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
+	font-size: 100%;
 	color: #333;
 	line-height: 1.5;
 }
@@ -16,11 +16,10 @@ body {
 	background-color: #fdfdfd;
 	margin: 0;
 	position:relative;
-	min-width: 445px;
+	min-width: 500px;
 }
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
 	color: #333;
 }
 a {
@@ -43,12 +42,12 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 #maincontent {
   background-color: #f3f3f3;
-  min-height: 100%;
+
 }
 #footer {
+  font-size: 80%;
   background-color: #444;
   color: #aaa;
-  font-size: 8pt;
   letter-spacing: 1px;
   padding: 25px;
   text-align: center;
@@ -63,46 +62,46 @@ nav {
 }
 nav h1 {
   margin: auto;
-	padding-top: 25px;
+	padding-top: 20px;
 }
 nav h1 a {
   color: #fff;
-  font-size: 14pt;
+  font-family: 'Voltaire', sans-serif;
   font-weight: 200;
   letter-spacing: 10px;
   text-transform: uppercase;
 }
 #breadcrumb {
-    padding: 10px 40px 16px;
-    list-style: none;
-    background-color: #eee;
-    font-size: 17px;
-    margin: 0;
-    width: 100%;
+  font-size: 90%;
+  padding: 10px 40px 16px;
+  list-style: none;
+  background-color: #eee;
+  margin: 0;
+  width: 100%;
 }
 
 /* Display list items side by side */
 #breadcrumb li {
-    display: inline;
+  display: inline;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
 #breadcrumb li+li:before {
-    padding: 8px;
-    color: black;
-    content: "/\00a0";
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
 }
 
 /* Add a color to all links inside the list */
 #breadcrumb li a {
-    color: #0275d8;
-    text-decoration: none;
+  color: #0275d8;
+  text-decoration: none;
 }
 
 /* Add a color on mouse-over */
 #breadcrumb li a:hover {
-    color: #01447e;
-    text-decoration: underline;
+  color: #01447e;
+  text-decoration: underline;
 }
 /* ====================== Map ====================== */
 #map {
@@ -113,27 +112,26 @@ nav h1 a {
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
-  height: 50px;
+  height: 100%;
   background-color: #3397DB;
-  align-items: center;
 }
 .filter-options h2 {
   color: white;
-  font-size: 1rem;
+  font-size: 90%;
   font-weight: normal;
   line-height: 1;
-  margin: 0 20px;
+  margin: 0 10px;
+  padding-top: 10px;
 }
 .filter-options select {
   background-color: white;
   border: 1px solid #fff;
   font-family: Arial,sans-serif;
-  font-size: 11pt;
   height: 35px;
   letter-spacing: 0;
   margin: 10px;
   padding: 0 10px;
-  width: 200px;
+  min-width: 225px;
 }
 
 /* ====================== Restaurant Listing ====================== */
@@ -141,8 +139,7 @@ nav h1 a {
   background-color: #f3f3f3;
   list-style: outside none none;
   margin: 0;
-  padding: 30px 15px 60px;
-  text-align: center;
+  padding: 15px 5px 60px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -150,7 +147,7 @@ nav h1 a {
 #restaurants-list li {
   background-color: #fff;
   border: 2px solid #ccc;
-	border-radius: 15px 50px;
+	border-radius: 0px 50px;
   font-family: Arial,sans-serif;
   margin: 15px;
 	width: 350px;
@@ -161,16 +158,15 @@ nav h1 a {
 #restaurants-list .restaurant-img {
   background-color: #ccc;
   display: block;
-	border-radius: 15px 35px;
+	border-radius: 0px 35px;
   margin: 0;
   max-width: 100%;
   min-height: 240px;
-  min-width: 100%;
 }
 #restaurants-list li h1 {
   color: #f18200;
-  font-family: Arial,sans-serif;
-  font-size: 14pt;
+  font-family: 'Voltaire', sans-serif;
+  font-size: 200%;
   font-weight: 200;
   letter-spacing: 0;
   line-height: 1.3;
@@ -179,26 +175,28 @@ nav h1 a {
 }
 #restaurants-list p {
   margin: 0;
-  font-size: 11pt;
+}
+#restaurants-list .neighborhood {
+  font-size: 110%;
 }
 #restaurants-list li a {
   background-color: orange;
   border-bottom: 3px solid #eee;
-	border-radius: 15px 50px;
+	border-radius: 0px 30px;
+  font-size: 90%;
   color: #fff;
   display: inline-block;
-  font-size: 10pt;
   margin: 15px 0 0;
-  padding: 8px 30px 10px;
+  padding: 8px 30px 8px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 }
+#restaurants-list li a:active {
+  transform: translateY(2px);
+}
 
 /* ====================== Restaurant Details ====================== */
-.inside {
-	min-width: 445px;
-}
 .inside header {
   position: fixed;
   top: 0;
@@ -220,8 +218,8 @@ nav h1 a {
 }
 #restaurant-name {
   color: #f18200;
-  font-family: Arial,sans-serif;
-  font-size: 20pt;
+  font-family: 'Voltaire', sans-serif;
+  font-size: 200%;
   font-weight: 200;
   letter-spacing: 0;
   margin: 15px 0 30px;
@@ -229,38 +227,43 @@ nav h1 a {
   line-height: 1.1;
 }
 #restaurant-img {
-	width: 100%;
+	max-width: 100%;
+	border-radius: 0px 50px 0px 0px;
 }
 #restaurant-address {
-  font-size: 12pt;
   margin: 10px 0px;
+  font-size: 110%;
 }
 #restaurant-cuisine {
+	max-width: 800px;
   background-color: #333;
+	border-radius: 0px 0px 0px 50px;
   color: #ddd;
-  font-size: 12pt;
+  font-size: 120%;
   font-weight: 300;
   letter-spacing: 10px;
   margin: 0 0 20px;
   padding: 2px 0;
   text-align: center;
   text-transform: uppercase;
-	width: 100%;
 }
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
   padding: 25px 40px 25px;
-
 }
 #reviews-container {
   padding: 30px 40px 80px;
 }
 #reviews-container h2 {
   color: #f58500;
-  font-size: 24pt;
-  font-weight: 300;
-  letter-spacing: -1px;
+  font-family: 'Voltaire', sans-serif;
+  font-size: 200%;
+  font-weight: 200;
+  letter-spacing: 0;
+  margin: 15px 0 30px;
+  text-transform: uppercase;
+  line-height: 1.1;
   padding-bottom: 1pt;
 }
 #reviews-list {
@@ -268,16 +271,28 @@ nav h1 a {
   padding: 0;
 }
 #reviews-list li {
+	max-width: 760px;
   background-color: #fff;
-    border: 2px solid #f3f3f3;
-		border-radius: 15px 50px;
+  border: 2px solid #f3f3f3;
+	border-radius: 0px 50px;
   display: block;
   list-style-type: none;
   margin: 0 0 30px;
   overflow: hidden;
   padding: 20px;
   position: relative;
-
+}
+#reviews-list .reviewsName {
+  font-size: 150%;
+}
+#reviews-list .reviewsRating {
+  background-color: #f58500;
+  font-weight: bold;
+  position: absolute;
+	border-radius: 0px 30px;
+  padding: 10px 40px;
+	top: 20px;
+	right: 20px;
 }
 #reviews-list li p {
   margin: 0 0 10px;
