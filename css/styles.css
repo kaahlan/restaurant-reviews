@@ -1,5 +1,8 @@
 /* CSS Document */
-body, td, th, p {
+body,
+td,
+th,
+p {
   font-family: Arial, Helvetica, sans-serif;
   color: #333;
   line-height: 1.5;
@@ -19,7 +22,8 @@ body {
   }
 }
 
-ul, li {
+ul,
+li {
   font-family: Arial, Helvetica, sans-serif;
   color: #333;
 }
@@ -35,15 +39,31 @@ a:hover, a:focus {
 }
 
 a img {
-  border: none 0px #fff;
+  border: none 0 #fff;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 0 20px;
 }
 
-article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   font-family: Arial, Helvetica, sans-serif;
   display: block;
 }
@@ -78,7 +98,7 @@ nav h1 {
 
 nav h1 a {
   color: #fff;
-  font-family: 'Voltaire', sans-serif;
+  font-family: "Voltaire", sans-serif;
   font-weight: 200;
   letter-spacing: 10px;
   text-transform: uppercase;
@@ -129,7 +149,7 @@ nav h1 a {
 .filter-options {
   width: 100%;
   height: 100%;
-  background-color: #3397db;
+  background-color: #01447e;
   transition: ease all 1s;
 }
 
@@ -167,7 +187,7 @@ nav h1 a {
 #restaurants-list li {
   background-color: #fff;
   border: 2px solid #ccc;
-  border-radius: 0px 50px;
+  border-radius: 0 50px;
   margin: 15px;
   width: 390px;
   min-height: 380px;
@@ -195,7 +215,7 @@ nav h1 a {
 #restaurants-list .restaurant-img {
   background-color: #ccc;
   display: block;
-  border-radius: 0px 35px;
+  border-radius: 0 35px;
   margin: 0;
   max-width: 100%;
   min-height: 240px;
@@ -203,7 +223,7 @@ nav h1 a {
 
 #restaurants-list li h1 {
   color: #f18200;
-  font-family: 'Voltaire', sans-serif;
+  font-family: "Voltaire", sans-serif;
   font-size: 200%;
   font-weight: 200;
   letter-spacing: 0;
@@ -224,7 +244,7 @@ nav h1 a {
 #restaurants-list li a {
   background-color: #f18200;
   border-bottom: 3px solid #eee;
-  border-radius: 0px 30px;
+  border-radius: 0 30px;
   font-size: 90%;
   color: #fff;
   display: inline-block;
@@ -265,7 +285,7 @@ nav h1 a {
 
 #restaurant-name {
   color: #f18200;
-  font-family: 'Voltaire', sans-serif;
+  font-family: "Voltaire", sans-serif;
   font-size: 200%;
   font-weight: 200;
   letter-spacing: 0;
@@ -276,11 +296,11 @@ nav h1 a {
 
 #restaurant-img {
   max-width: 100%;
-  border-radius: 0px 50px 0px 0px;
+  border-radius: 0 50px 0 0;
 }
 
 #restaurant-address {
-  margin: 10px 0px;
+  margin: 10px 0;
   font-size: 110%;
   font-weight: bold;
 }
@@ -288,7 +308,7 @@ nav h1 a {
 #restaurant-cuisine {
   max-width: 800px;
   background-color: #333;
-  border-radius: 0px 0px 0px 50px;
+  border-radius: 0 0 0 50px;
   color: #ddd;
   font-size: 120%;
   font-weight: 300;
@@ -299,7 +319,8 @@ nav h1 a {
   text-transform: uppercase;
 }
 
-#restaurant-container, #reviews-container {
+#restaurant-container,
+#reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
   padding: 25px 40px 25px;
@@ -311,7 +332,7 @@ nav h1 a {
 
 #reviews-container h2 {
   color: #f18200;
-  font-family: 'Voltaire', sans-serif;
+  font-family: "Voltaire", sans-serif;
   font-size: 200%;
   font-weight: 200;
   letter-spacing: 0;
@@ -330,7 +351,7 @@ nav h1 a {
   max-width: 760px;
   background-color: #fff;
   border: 2px solid #f3f3f3;
-  border-radius: 0px 50px;
+  border-radius: 0 50px;
   display: block;
   list-style-type: none;
   margin: 0 0 30px;
@@ -339,15 +360,15 @@ nav h1 a {
   position: relative;
 }
 
-#reviews-list .reviewsName {
+#reviews-list .reviews-name {
   font-size: 150%;
 }
 
-#reviews-list .reviewsRating {
+#reviews-list .reviews-rating {
   background-color: #f18200;
   font-weight: bold;
   position: absolute;
-  border-radius: 0px 30px;
+  border-radius: 0 30px;
   padding: 10px 40px;
   top: 20px;
   right: 20px;
