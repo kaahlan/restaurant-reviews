@@ -1,28 +1,43 @@
-# Mobile Web Specialist Certification Course
----
-#### _Three Stage Course Material Project - Restaurant Reviews_
+# Restaurant Reviews App
 
-## Project Overview: Stage 1
+Restaurant Reviews App project for Udacity's Front-End Web Developer Nanodegree
 
-For the **Restaurant Reviews** projects, you will incrementally convert a static webpage to a mobile-ready web application. In **Stage One**, you will take a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use. You will also add a service worker to begin the process of creating a seamless offline experience for your users.
+## Table of Contents
 
-### Specification
+- [Project Specifications](#Project-Specifications)
+- [How to Launch](#How-To-Launch)
+- [Resources](#Resources)
 
-You have been provided the code for a restaurant reviews website. The code has a lot of issues. It’s barely usable on a desktop browser, much less a mobile device. It also doesn’t include any standard accessibility features, and it doesn’t work offline at all. Your job is to update the code to resolve these issues while still maintaining the included functionality. 
+## Project-Specifications
 
-### What do I do from here?
+For this project, I had to incrementally convert a static webpage to a mobile-ready web application while still maintaining the included functionality. I took a static design that lacked accessibility and converted the design to be responsive on different sized displays and accessible for screen reader use. I added a service worker to cache files and begin to create a seamless offline experience for users.
 
-1. In this folder, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer. 
+## How-To-Launch
+
+Website can be accessed online [here](https://kaahlan.github.io/restaurant-reviews/).
+
+You can also click on "Clone or download" and download ZIP, then extract the files.
+
+1. In this folder, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer.
 
 In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
 
-2. With your server running, visit the site: `http://localhost:8000`, and look around for a bit to see what the current experience looks like.
-3. Explore the provided code, and make start making a plan to implement the required features in three areas: responsive design, accessibility and offline use.
-4. Write code to implement the updates to get this site on its way to being a mobile-ready website.
+2. With your server running, visit the site: `http://localhost:8000`.
 
-### Note about ES6
+## Resources
 
-Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code. As much as possible, try to maintain use of ES6 in any additional JavaScript you write. 
+Starter Code - [Udacity](https://github.com/udacity/mws-restaurant-stage-1/tree/google-maps)
 
+Responsive Meta Tag - [CSS Tricks](https://css-tricks.com/snippets/html/responsive-meta-tag/)
 
+Guide to Flexbox - [CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
+Creating Element with JS - [HTML Dog](https://htmldog.com/guides/javascript/advanced/creatingelements/)
+
+Google Fonts - Voltaire - [Google](https://fonts.google.com/specimen/Voltaire?selection.family=Voltaire)
+
+Scalable Font Sizes - [Andy Carter](https://andy-carter.com/blog/using-scalable-css-units-for-font-sizeshttps://stackoverflow.com/questions/33742253/smooth-css-transition-using-media-queries)
+
+ARIA [W3](https://www.w3.org/TR/wai-aria-1.1/)
+
+Service Workers Primer [Google](https://developers.google.com/web/fundamentals/primers/service-workers/)
