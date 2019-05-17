@@ -38,6 +38,6 @@ Google Fonts - Voltaire - [Google](https://fonts.google.com/specimen/Voltaire?se
 
 Scalable Font Sizes - [Andy Carter](https://andy-carter.com/blog/using-scalable-css-units-for-font-sizeshttps://stackoverflow.com/questions/33742253/smooth-css-transition-using-media-queries)
 
-ARIA [W3](https://www.w3.org/TR/wai-aria-1.1/)
+ARIA - [W3](https://www.w3.org/TR/wai-aria-1.1/)
 
-Service Workers Primer [Google](https://developers.google.com/web/fundamentals/primers/service-workers/)
+Service Workers Primer - [Google](https://developers.google.com/web/fundamentals/primers/service-workers/)
