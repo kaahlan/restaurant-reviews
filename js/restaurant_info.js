@@ -55,11 +55,13 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
 
   const address = document.getElementById('restaurant-address');
   address.innerHTML = restaurant.address;
+  address.setAttribute("tabindex", "1");
 
   const image = document.getElementById('restaurant-img');
   image.className = 'restaurant-img'
   image.alt = `Photo of ${restaurant.name} restaurant`
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  image.setAttribute("tabindex", "1");
 
   const cuisine = document.getElementById('restaurant-cuisine');
   cuisine.innerHTML = restaurant.cuisine_type;
@@ -78,6 +80,8 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
  */
 fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => {
   const hours = document.getElementById('restaurant-hours');
+  hours.setAttribute("tabindex", "1");
+
   for (let key in operatingHours) {
     const row = document.createElement('tr');
 
@@ -129,6 +133,7 @@ createReviewHTML = (review) => {
 
   const date = document.createElement('p');
   date.innerHTML = review.date;
+  date.setAttribute("tabindex", "1");
   li.appendChild(date);
 
   const rating = document.createElement('p');
@@ -139,6 +144,7 @@ createReviewHTML = (review) => {
 
   const comments = document.createElement('p');
   comments.innerHTML = review.comments;
+  comments.setAttribute("tabindex", "1");
   li.appendChild(comments);
 
   return li;

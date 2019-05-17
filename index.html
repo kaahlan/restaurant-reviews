@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -13,25 +14,25 @@
 <body>
   <header>
     <nav>
-      <h1><a href="./index.html"  tabindex="1">Restaurant Reviews</a></h1>
+      <h1><a href="./index.html" tabindex="1">Restaurant Reviews</a></h1>
     </nav>
   </header>
 
   <main id="maincontent">
     <section id="map-container">
-      <div id="map"></div>
+      <div id="map" role="application" aria-label="Map with restaurant markers"></div>
     </section>
     <section>
       <div class="filter-options">
-        <h2 tabindex="1">Filter Results</h2>
-        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" tabindex="1">
+        <h2>Filter Results</h2>
+        <select id="neighborhoods-select" name="neighborhoods" aria-label="Select restaurant neighborhood" onchange="updateRestaurants()" tabindex="1">
           <option value="all">All Neighborhoods</option>
         </select>
-        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()" tabindex="1">
+        <select id="cuisines-select" name="cuisines" aria-label="Select restaurant cuisine" onchange="updateRestaurants()" tabindex="1">
           <option value="all">All Cuisines</option>
         </select>
       </div>
-      <ul id="restaurants-list"></ul>
+      <ul id="restaurants-list" aria-label="List of restaurants"></ul>
     </section>
   </main>
 
@@ -40,7 +41,7 @@
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMxPljOB7LMBo7_1wz6oUt2hwH9mNjqPc&libraries=places&callback=initMap"></script>
 
   <footer id="footer">
-    Copyright (c) 2017 <a href="./index.html"  tabindex="1"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+    Copyright (c) 2017 <a href="./index.html" tabindex="1"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
   </footer>
 
 </body>
